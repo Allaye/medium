@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+{% endblock head %}
+
+<!--- End of head section-->
+
+ {% block body %}
+
+ <form method="POST">
+
+   {{ form.hidden_tag()}}
+   {{ form.email.label }} {{ form.email()}}
+   {{ form.username.label }} {{ form.username()}}
+   {{ form.passwrd.label }} {{ form.passwrd()}}
+   {{ form.confirmed_password.label}} {{ form.confirmed_password()}}
+   {{ form.submit()}}
+ 
+ </form>
+     
+ {% endblock body %}
+
